@@ -8,8 +8,7 @@ body {
 .navbar {
   border-bottom: 3px solid rgba(109, 54, 237, 0.205);
   font-weight: bold;
-  text-shadow: 0 0 3px #10f8edac, 0 0 3px #c6e41cdc;  background: rgb(0, 255, 191);
-  background: rgb(34,193,195);
+  text-shadow: 0 0 3px #10f8edac, 0 0 3px #c6e41cdc;  background: rgb(0, 255, 191);  background: rgb(34,193,195);
   background: linear-gradient(100deg, rgba(34,193,195,1) 0%, rgba(230,187,95,0.908000700280112) 100%);
   }
 
@@ -89,3 +88,12 @@ body {
   background-size: 255px;
   height: 70px;
 }
+
+#card-body {
+  background-color: rgba(26, 194, 154, 0.234);
+}
+
+#card-hf {
+  background-color: rgba(45, 177, 177, 0.346);
+}
+
