@@ -27,7 +27,7 @@ class ArticlesController < ApplicationController
 
   def update
     if @article.update(article_params)
-      flash[:notice] = "Article was updates succesfully"
+      flash[:notice] = "Article was updated succesfully"
       redirect_to @article
     else
       render 'edit'
