@@ -23,7 +23,7 @@ class ArticlesController < ApplicationController
     @article = Article.new(article_params)
     @article.user = current_user
     if @article.save
-      flash[:notice] = "Article was created succesfully."
+      flash[:notice] = "Wpis utworzony pomyslnie"
       redirect_to @article
     else
       render 'new'
@@ -32,7 +32,7 @@ class ArticlesController < ApplicationController
 
   def update
     if @article.update(article_params)
-      flash[:notice] = "Article was updated succesfully"
+      flash[:notice] = "Wpis edytowany pomyslnie"
       redirect_to @article
     else
       render 'edit'
@@ -48,7 +48,7 @@ class ArticlesController < ApplicationController
     private
 
     def require_same_user
-      if current_user != @article.user
+      if current_user != @article.user && !current_user.admin?
         flash[:alert] = "Mozesz edytowac lub usuwac tylko twoje wlasne wpisy"
         redirect_to @article
       end

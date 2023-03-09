@@ -105,6 +105,10 @@ body {
   border-width: 3px;
 }
 
+#navbarDropdown1 {
+  color: red;
+}
+
 #title {
   border-style: solid;
   border-color: rgba(190, 193, 194, 0.519);
@@ -131,7 +135,7 @@ body {
     border: 1px solid #1c8b5e;
     color: #0c87eca0;
     text-decoration: none; }
-    .flickr_pagination a:hover, .flickr_pagination a:focus {
+  .flickr_pagination a:hover, .flickr_pagination a:focus {
       border-color: rgba(35, 75, 74, 0.814);
       background: rgba(44, 249, 215, 0.283);
       color: white; }
